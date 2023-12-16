@@ -14,6 +14,8 @@ database.on("connected",()=>{
 });
 
 server.use('/api',crudOperation);
-
+server.get('/check',()=>{
+    console.log("Check")
+});
 
 server.listen(4000);
