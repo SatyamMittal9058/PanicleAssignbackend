@@ -26,7 +26,7 @@ router.post('/newuser', async (req, res) => {
     }
 })
 
-router.put('/updateOradd', async (req, res) => {
+router.post('/updateOradd', async (req, res) => {
     const data = req.body;
   
     if (!data.name || !data.department || !data.position || !data.salary) {
